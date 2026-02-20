@@ -1,0 +1,326 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Joy Adhikari — Frontend Developer</title>
+  <meta name="description" content="Joy Adhikari Portfolio - Frontend Developer" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <div class="wrap">
+
+    <!-- ================= HEADER ================= -->
+    <header>
+      <div class="mast">
+        <div class="avatar">
+          <img src="img/my pic.jpg" alt="Joy Adhikari" class="avatar-img">
+        </div>
+        <div class="title">
+          <h1>Joy Adhikari</h1>
+          <p>|| Frontend Developer ||</p>
+        </div>
+      </div>
+
+      <nav>
+        <button class="nav-btn" id="aboutNow">About</button>
+        <button class="nav-btn"
+          onclick="document.getElementById('projects').scrollIntoView({behavior:'smooth'})">Work</button>
+        <button class="nav-btn primary" id="contactNow">Contact</button>
+      </nav>
+    </header>
+
+    <!-- ================= HERO ================= -->
+    <section class="hero">
+      <article class="hero-article reveal">
+        <div class="eyebrow">Featured Project</div>
+        <h2>My Food App — Full Stack Web Application</h2>
+        <p class="lead">
+          A full-stack food ordering web app built using html, Css, Javascript, and MongoDB with authentication,
+          real-time ordering, and responsive UI.
+        </p>
+        <a class="read-more" href="#projects">View Projects →</a>
+      </article>
+
+      <aside class="side-card">
+        <h4>Quick Facts</h4>
+        <div class="small">Based in: India</div>
+
+        <div style="margin-top:12px">
+          <div class="kicker">Skills</div>
+          <div style="margin-top:8px">
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag">React</span>
+            <span class="tag">Python</span>
+            <span class="tag">MongoDB</span>
+          </div>
+        </div>
+
+        <!-- <div style="margin-top:15px">
+          <a href="https://github.com/joyadhikari" target="_blank">GitHub</a> |
+          <a href="https://www.linkedin.com/in/joy-adhikari-341425291/" target="_blank">LinkedIn</a>
+        </div> -->
+      </aside>
+    </section>
+
+    <!-- ================= ABOUT ================= -->
+    <section id="about" class="about">
+      <div class="about-card reveal">
+        <h2>About Me</h2>
+        <p class="lead">
+          I am a passionate Frontend Developer and Computer Science student focused on building responsive,
+          user-friendly web applications. I enjoy solving real-world problems and continuously learning new
+          technologies.
+        </p>
+
+        <div class="about-grid">
+          <div>
+            <h4>Education</h4>
+            <p class="small">
+              B.Tech in Computer Science & Engineering<br>
+              Swami Vivekananda University (2023–Present)
+            </p>
+
+            <h4>Strengths</h4>
+            <p class="small">Problem-solving, Adaptability, Teamwork</p>
+          </div>
+
+          <div>
+            <h4>Technologies</h4>
+            <p class="small">HTML • CSS • JavaScript • React • Node.js • MongoDB</p>
+
+            <h4>Career Goal</h4>
+            <p class="small">To grow as a full-stack developer and contribute to impactful real-world projects.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= PROJECTS ================= -->
+    <section id="projects" class="projects">
+
+      <div class="project-card reveal">
+        <img src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?q=80&w=800&auto=format&fit=crop"
+          alt="Food App">
+        <h3>My Food App</h3>
+        <div class="meta">React, Node.js, Express, MongoDB</div>
+      </div>
+
+      <div class="project-card reveal">
+        <img src="https://images.unsplash.com/photo-1508921912186-1d1a45ebb3c1?q=80&w=800&auto=format&fit=crop"
+          alt="Portfolio">
+        <h3>Portfolio Website</h3>
+        <div class="meta">Responsive Magazine-Style Portfolio</div>
+      </div>
+
+      <div class="project-card reveal">
+        <img src="./img/weather.jpg" alt="Weather App">
+        <h3>Weather App</h3>
+        <div class="meta">React + OpenWeather API</div>
+      </div>
+
+    </section>
+
+    <!-- ================= CONTACT ================= -->
+    <section class="contact" id="contact">
+      <div class="card">
+        <h3>Get in Touch</h3>
+        <div class="small">Interested in working together? Send a message.</div>
+
+        <input id="name" placeholder="Your Name">
+        <input id="email" placeholder="Email">
+        <input id="Number" placeholder="Phone Number">
+        <textarea id="msg" rows="4" placeholder="Your Message"></textarea>
+
+        <button class="send" id="sendBtn">Send Message</button>
+        <a href="https://github.com/joyadhikari" target="_blank">GitHub</a> |
+          <a href="https://www.linkedin.com/in/joy-adhikari-341425291/" target="_blank">LinkedIn</a>
+      </div>
+
+      <div style="width:320px;align-self:flex-start">
+        <div style="background:#fff;padding:18px;border-radius:12px;box-shadow:var(--card-shadow)">
+          <h4>Resume</h4>
+          <p class="small">Download my latest resume.</p>
+          <a class="nav-btn primary" href="my_resume.pdf" download>Download PDF</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+    <footer style="margin-top:40px;text-align:center;color:var(--muted);font-size:13px">
+      © 2026 Joy Adhikari | Frontend Developer
+    </footer>
+
+  </div>
+
+  <script src="javascript.js"></script>
+</body>
+
+
+<!-- <!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title> Joy Adhikari — Portfolio </title>
+  <meta name="description" content="Magazine-style single-file portfolio — HTML, CSS, JS" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <div class="wrap">
+    <header>
+      <div class="mast">
+        <div class="avatar">
+          <img src="./img.jpg" alt="" style="width: 90px; height: 90px;">
+        </div>
+        <div class="title">
+          <h1>Joy Adhikari</h1>
+          <p>Frontend Developer — Portfolio & case studies</p>
+        </div>
+      </div>
+      <nav>
+        <button class="nav-btn" id="aboutNow">About</button>
+        <button class="nav-btn">Work</button>
+        <button class="nav-btn">Blog</button>
+        <button class="nav-btn primary" id="contactNow">Contact</button>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <article class="hero-article" id="hero">
+        <div class="eyebrow">Featured project</div>
+        <h2>food app — a bite-sized web app for discovering and saving recipes</h2>
+        <p class="lead">A clean, magazine-inspired UI with searchable categories, step-by-step instructions, and an
+          emphasis on photography and clarity.</p>
+        <div style="display:flex;gap:10px;align-items:center">
+          <a class="read-more" href="#projects">View case study →</a>
+          <div class="small">Role: Frontend • HTML/CSS/JS — Time: 4 weeks</div>
+        </div>
+      </article>
+
+      <aside class="side-card">
+        <h4>Quick facts</h4>
+        <div class="small">Based in: India</div>
+         <div class="small">Available for: freelance & remote</div> --
+        <div style="margin-top:12px">
+          <div class="kicker">Skills</div>
+          <div style="margin-top:8px">
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+            <span class="tag">JavaScript</span>
+             <span class="tag">Accessibility</span> --
+            <span class="tag">python</span>
+            <span class="tag">React</span>
+             <span class="tag">C++</span> --
+          </div>
+        </div>
+      </aside>
+    </section>
+
+    <section id="about" class="about" aria-label="About">
+      <div class="about-card reveal" tabindex="0">
+        <h2>About me</h2>
+        <p class="lead">I'm Joy — a frontend developer focused on building accessible, performant, and delightful user
+          experiences. I enjoy crafting simple, readable interfaces and writing pragmatic JavaScript.</p>
+
+        <div class="about-grid">
+          <div>
+            <h4>Background</h4>
+            <p class="small">I started as a designer before moving into code; I love the intersection of design and
+              engineering.</p>
+            <h4>Experience</h4>
+            <p class="small">I have worked on product teams and freelance projects, building responsive web apps and
+              component libraries.</p>
+          </div>
+          <div>
+            <h4>Interests</h4>
+            <p class="small">Design systems, performance, accessibility, and content-focused layouts.</p>
+            <h4>Tools</h4>
+            <p class="small">HTML • CSS • JavaScript • • React (optional)</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="projects" aria-label="Projects">
+  ROW 1 
+  <div class="project-row">
+    <div class="project-card reveal">
+      <h2>Project</h2>
+      <img
+        src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?q=80&w=800&auto=format&fit=crop"
+        alt="Food App">
+      <h3>Food App</h3>
+      <div class="meta">Search, filter, and favorite recipes</div>
+    </div>
+
+    <div class="project-card reveal">
+      <img
+        src="https://images.unsplash.com/photo-1508921912186-1d1a45ebb3c1?q=80&w=800&auto=format&fit=crop"
+        alt="Portfolio">
+      <h3>Portfolio Website</h3>
+      <div class="meta">Magazine-style responsive portfolio</div>
+    </div>
+  </div>
+
+   ROW 2 
+  <div class="project-row">
+    <div class="project-card reveal">
+      <img
+        src="https://images.unsplash.com/photo-1542736667-069246bdbc6d?q=80&w=800&auto=format&fit=crop"
+        alt="UI Kit">
+      <h3>UI Component Kit</h3>
+      <div class="meta">Reusable accessible UI components</div>
+    </div>
+   <div class="project-card reveal">
+      <img
+        src="https://images.unsplash.com/photo-1559027615-cdcb8aaf6d38?q=80&w=800&auto=format&fit=crop"
+        alt="Dashboard">
+      <h3>Admin Dashboard</h3>
+      <div class="meta">Analytics dashboard with charts</div>
+    </div> 
+  </div>
+
+</section>
+
+
+    <section class="contact" id="contact">
+      <div class="card">
+        <h3>Get in touch</h3>
+        <div class="small">Interested in working together? Send a quick message.</div>
+        <input id="name" placeholder="Your name">
+        <input id="email" placeholder="Email">
+        <input id="Number" placeholder="Phone Number">
+        <textarea id="msg" rows="4" placeholder="Tell me about the project"></textarea>
+        <button class="send" id="sendBtn">Send message</button>
+      </div>
+
+      <div style="width:320px;align-self:flex-start">
+        <div
+          style="background:linear-gradient(180deg,#fff,#fff);padding:18px;border-radius:12px;box-shadow:var(--card-shadow)">
+          <h4 style="margin:0 0 8px 0">Resume</h4>
+          <p class="small">Download a PDF or view a quick CV. Replace link with your own resume file.</p>
+          <div style="margin-top:12px">
+        
+            <a class="nav-btn primary" href="my_resume.pdf" id="downloadResume" download
+              style="margin-left:8px">Download PDF</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer style="margin-top:40px;text-align:center;color:var(--muted);font-size:13px">© Joy Adhikari </footer>
+  </div>
+
+  <script src="javascript.js"></script>
+</body>
+
+</html> -->
+
+</html>
